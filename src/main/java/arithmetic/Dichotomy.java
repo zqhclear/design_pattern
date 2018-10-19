@@ -1,4 +1,4 @@
-package arithmetic.dichotomy;
+package arithmetic;
 
 public class Dichotomy {
 	
