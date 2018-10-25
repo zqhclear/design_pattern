@@ -1,5 +1,7 @@
 package designMode.adapt.adapt_object;
 
+import designMode.adapt.adapt_class.Traget;
+
 /**
  * 适配器模式  （对象适配器,相比于类适配器，更加灵活）
  *  适用场景：
@@ -13,8 +15,8 @@ package designMode.adapt.adapt_object;
 public class Client {
 	public static void main(String[] args) {
 		// 使用普通功能类
-		TragetImpl tragetImpl = new TragetImpl();
-		tragetImpl.doCommon();
+		Target target = new TragetImpl();
+		target.doCommon();
 
 		Adapter adapter = new Adapter(new Adaptee());
 		adapter.doCommon();

@@ -2,8 +2,6 @@ package arithmetic;
 
 import com.alibaba.fastjson.JSONObject;
 
-import java.util.Arrays;
-
 /**
  * @Description 各种排序算法
  * @Author zhongqionghua
@@ -288,15 +286,15 @@ public class SortWay {
 		int temp = array[k];
 		//i为初始化为节点k的左孩子，沿节点较大的子节点向下调整
 		for (int i = 2 * k + 1; i <= length - 1; i = 2 * i + 1) {
-			//取节点较大的子节点的下标
+			//取节点较大的子节点的下标；i + 1 < length防止该根节点只有一个子节点出现数组越界
 			if (i + 1 < length && array[i] < array[i + 1]) {
 				//如果节点的右孩子>左孩子，则取右孩子节点的下标
 				i++;
 			}
-			//根节点 >=左右子女中关键字较大者，调整结束
+			//根节点 >=左右子女中关键字较大者，不需要调整
 			if (temp >= array[i]) {
 				break;
-				//根节点 <左右子女中关键字较大者
+				//根节点 <左右子女中关键字较大者，调整
 			} else {
 				//将左右子结点中较大值array[i]调整到双亲节点上
 				array[k] = array[i];

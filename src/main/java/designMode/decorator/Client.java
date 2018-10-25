@@ -1,6 +1,8 @@
 package designMode.decorator;
 
-//测试类
+/**
+ * 装饰器模式：
+ */
 public class Client {  
   public static void main(String[] args) {  
       Human person = new Person();  

@@ -7,6 +7,7 @@ package designMode.adapt.adapt_object;
  */
 public class TragetImpl implements Target {
 
+	@Override
 	public void doCommon() {
 		System.out.println("this is the common type");
 	}

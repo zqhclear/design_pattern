@@ -22,8 +22,7 @@ public class Decorator_two extends Decorator {
   
     @Override  
     public void walkToWhere() {  
-        // TODO Auto-generated method stub  
-        super.walkToWhere();  
+        super.walkToWhere();
         findTheTarget();  
     }  
 }  

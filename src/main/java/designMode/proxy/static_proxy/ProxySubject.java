@@ -2,12 +2,13 @@ package designMode.proxy.static_proxy;
 
 public class ProxySubject implements AbstractSubject {
 
-	private AbstractSubject subjectImpl;
+	private AbstractSubject subject;
 	public ProxySubject(AbstractSubject subject){
-		this.subjectImpl = subject;
+		this.subject = subject;
 	}
+	@Override
 	public void SayCommon() {
-		subjectImpl.SayCommon();
+		subject.SayCommon();
 	}
 	/**
 	 * 补充的方法

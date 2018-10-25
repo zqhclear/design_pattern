@@ -10,6 +10,7 @@ public class SubjectHandler implements InvocationHandler {
 		this.subject = subject;
 	}
 
+	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		System.out.println("begin!!!!! this is a dynamic_proxy!");
 		Method myMethod = subject.getClass().getDeclaredMethod(method.getName(), method.getParameterTypes());

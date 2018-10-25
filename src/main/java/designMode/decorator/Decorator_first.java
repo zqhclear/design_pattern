@@ -22,8 +22,7 @@ public class Decorator_first extends Decorator {
   
     @Override  
     public void walkToWhere() {  
-        // TODO Auto-generated method stub  
-        super.walkToWhere();  
+        super.walkToWhere();
         findPlaceOnMap();  
     }  
 }  

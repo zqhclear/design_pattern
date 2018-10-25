@@ -10,7 +10,7 @@ public class Client {
 		TragetImpl tragetImpl = new TragetImpl();
 		tragetImpl.doCommon();
 		
-		AdaptTragetee adaptTragetOne = new AdaptTragetee();
-		adaptTragetOne.adaptMethod();
+		Adapter adapter = new Adapter();
+		adapter.doCommon();
 	}
 }

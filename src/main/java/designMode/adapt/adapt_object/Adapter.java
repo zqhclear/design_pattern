@@ -12,6 +12,7 @@ public class Adapter implements Target {
 	public Adapter(Adaptee targetee) {
 		this.adaptee = targetee;
 	}
+	@Override
 	public void doCommon() {
 		adaptee.doSpeMethod();
 	}
