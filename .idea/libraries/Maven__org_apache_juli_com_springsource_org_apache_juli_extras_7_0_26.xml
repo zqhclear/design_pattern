@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.juli:com.springsource.org.apache.juli.extras:7.0.26">
+    <CLASSES>
+      <root url="jar://F:/maven/repository/org/apache/juli/com.springsource.org.apache.juli.extras/7.0.26/com.springsource.org.apache.juli.extras-7.0.26.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://F:/maven/repository/org/apache/juli/com.springsource.org.apache.juli.extras/7.0.26/com.springsource.org.apache.juli.extras-7.0.26-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://F:/maven/repository/org/apache/juli/com.springsource.org.apache.juli.extras/7.0.26/com.springsource.org.apache.juli.extras-7.0.26-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
