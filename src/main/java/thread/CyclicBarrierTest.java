@@ -27,8 +27,10 @@ public class CyclicBarrierTest {
 
 
 		// 当同一个线程重复执行cyclicBarrier.await();的时候,会发生什么
-		new Thread(() -> doSomething()).start();
-		System.out.println("方法执行完毕");
+//		new Thread(() -> doSomething()).start();
+//		System.out.println("方法执行完毕");
+
+		System.out.println(System.nanoTime());
 	}
 
 	private static Function doSomething(){

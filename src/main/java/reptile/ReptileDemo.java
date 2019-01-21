@@ -5,6 +5,11 @@ import java.net.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * 爬虫
+ * @author zhongqionghua
+ * #date 1/21/2019
+ */
 public class ReptileDemo {
 	public static void main(String[] args){
 		URL url = null;

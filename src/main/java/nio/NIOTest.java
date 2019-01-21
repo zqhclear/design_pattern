@@ -77,7 +77,6 @@ public class NIOTest {
 					System.out.print((char) byteBuffer.get());
 				}
 
-				//compact()和clear()的区别:前者只会删除已被读取的(position标志的位置,未被读取的往前移,后续读取往后添加)
 				// clear直接清空内存中所有的已读入的内容
 				byteBuffer.compact();
 				chanelRead = fileChannel.read(byteBuffer);
