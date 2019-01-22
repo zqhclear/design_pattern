@@ -154,7 +154,7 @@ public class SortWay {
 	 *
 	 * @return int[] intArray = { 2,0,6,9,7,4,1,3,5,4 };
 	 */
-	private static int[] quickSort(int[] intArray, int left, int right) {
+	public static int[] quickSort(int[] intArray, int left, int right) {
 		//参数不符合要求
 		if (left >= right) {
 			return intArray;
