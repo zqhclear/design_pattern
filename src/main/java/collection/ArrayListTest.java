@@ -20,8 +20,11 @@ public class ArrayListTest {
 			System.out.println(listIterator.next());
 		}
 
-		System.out.println(Collections.indexOfSubList(intList, target));
-		System.out.println(Collections.lastIndexOfSubList(intList, target));
+//		System.out.println(Collections.indexOfSubList(intList, target));
+//		System.out.println(Collections.lastIndexOfSubList(intList, target));
+
+		Collections.rotate(intList, 6);
+		System.out.println(intList);
 
 //		intList.add(0, 6);
 //		System.out.println(JSONObject.toJSONString(intList));
