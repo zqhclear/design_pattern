@@ -10,9 +10,9 @@ import com.alibaba.fastjson.JSONObject;
 public class SortWay {
 
 	public static void main(String[] args) {
-		//冒泡排序
-		bubbleSort();
-		System.out.println();
+//		//冒泡排序
+//		bubbleSort();
+//		System.out.println();
 
 		//直接排序
 		directSequence();
@@ -141,6 +141,7 @@ public class SortWay {
 				}
 				//将最后的值填写到空缺的的位置
 				intArray[position] = temp;
+				System.out.println(JSONObject.toJSONString(intArray));
 			}
 		}
 		System.out.println("direct-sort-end:" + JSONObject.toJSONString(intArray));

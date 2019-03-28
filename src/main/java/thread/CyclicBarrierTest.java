@@ -7,6 +7,8 @@ import java.util.function.Function;
 
 /**
  * @Description: 同步屏障:是停掉这个线程得的所有活动,和这个线程执行什么东西无关
+ * 有两个构造函数,new CyclicBarrier(int ) 即有多少个线程await()之后,开始后续执行
+ * new CyclicBarrier(int, Runnable) 即有多少个线程await()之后,开始后续执行所有线程,并且随机挑选一个线程执行Runnable
  * @Author: zhongqionghua
  * @CreateDate: 2018/10/29 15:13
  */
