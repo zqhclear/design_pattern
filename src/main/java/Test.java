@@ -84,8 +84,19 @@ public class Test {
 //		stack.pop();
 
 
-		System.out.println(decryptFromBase64("BGxKtjbfzgi+lr5EB+LU6Q==", "testC1b6x@6aH$2dlw"));
-		System.out.println(decryptFromBase64("cJiZKo2M0HcKZdjgGmv/vQ==", "testC1b6x@6aH$2dlw"));
+//		System.out.println(decryptFromBase64("BGxKtjbfzgi+lr5EB+LU6Q==", "testC1b6x@6aH$2dlw"));
+//		System.out.println(decryptFromBase64("cJiZKo2M0HcKZdjgGmv/vQ==", "testC1b6x@6aH$2dlw"));
+
+		countParams();
+	}
+
+	private static int countParams(String... params) {
+		int count = 0;
+		for (int i = 0; i < params.length; i++) {
+			count++;
+		}
+		System.out.println("count:" + count);
+		return count;
 	}
 
 
