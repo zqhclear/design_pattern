@@ -41,13 +41,18 @@ public class FirstChapter {
 
 
 	public static void main(String[] args) throws IOException {
+
+		Object sa = 10;
+		System.out.println("10".equals(sa.toString()));
 		//createPhoneFile();
 
-		//firstQ();
+//		firstQ();
 
 		//secondQ();
 
-		threeQ();
+//		threeQ();
+
+
 	}
 
 

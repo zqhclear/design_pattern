@@ -2,6 +2,8 @@ package arithmetic;
 
 import com.alibaba.fastjson.JSONObject;
 
+import java.util.Calendar;
+
 /**
  * @Description 各种排序算法
  * @Author zhongqionghua
@@ -40,7 +42,43 @@ public class SortWay {
 		mergeSort(intArrayForMergeSort, 0, intArrayForMergeSort.length);
 		System.out.println("merge-sort-end:" + JSONObject.toJSONString(intArrayForMergeSort));
 		System.out.println();
+
+
+		//二分法排序--是简单插入排序的优化
+		int[] defaultArray = {87, 45, 78, 32, 17, 65, 53, 9, 122, 133};
+		binarySort(defaultArray);
+
 	}
+
+
+	/**
+	 * 二分法排序
+	 *
+	 * @param values
+	 */
+	private static void binarySort(int[] values) {
+		System.out.println(JSONObject.toJSONString(values));
+		for (int i = 0; i < values.length; i++) {
+			int currentValues = values[i];
+			int low = 0;
+			int high = i - 1;
+			while (low <= high) {
+				int mid = (low + high) / 2;
+				if (currentValues < values[mid]) {
+					low = mid + 1;
+				} else {
+					high = mid - 1;
+				}
+			}
+			for (int j = i - 1; j > high; j--) {
+				values[j + 1] = values[j];
+			}
+			values[high + 1] = currentValues;
+			System.out.println(i + " : " + JSONObject.toJSONString(values));
+		}
+		System.out.println(JSONObject.toJSONString(values));
+	}
+
 
 	/**
 	 * 归并排序：分治思想，先分后治

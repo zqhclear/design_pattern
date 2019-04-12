@@ -5,7 +5,7 @@ public class Dichotomy {
 	public static void main(String[] args) {
 		int[] intArr = new int[]{1,2,3,4,5,6,7,8,9,9,9,10};
 		
-		int position = cacelPosition(intArr, 6);
+		int position = calculatePosition(intArr, 6);
 		System.out.println(position == -1 ? "sorry，未找到该元素" : "该key位于:" + (position + 1));
 		
 		int lessPosition = findLastNumLessthanKey(intArr, 7);
@@ -103,7 +103,7 @@ public class Dichotomy {
 	 * @param key
 	 * @return
 	 */
-	private static int cacelPosition(int[] intArr, int key){
+	private static int calculatePosition(int[] intArr, int key){
 		if(intArr == null || intArr.length == 0){
 			return -1;
 		}
