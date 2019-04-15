@@ -2,8 +2,6 @@ package arithmetic;
 
 import com.alibaba.fastjson.JSONObject;
 
-import java.util.Calendar;
-
 /**
  * @Description 各种排序算法
  * @Author zhongqionghua
@@ -12,52 +10,138 @@ import java.util.Calendar;
 public class SortWay {
 
 	public static void main(String[] args) {
-//		//冒泡排序
-//		bubbleSort();
-//		System.out.println();
+		//冒泡排序
+		int[] intArrayBubble = generateArray();
+		bubbleSort(intArrayBubble);
+		System.out.println();
 
-		//直接排序
-		directSequence();
+		//选择排序
+		int[] intArraySelect = generateArray();
+		selectSort(intArraySelect);
+		System.out.println();
+
+		//插入排序
+		int[] intArrayInsert = generateArray();
+		insertSort(intArrayInsert);
+		System.out.println();
+
+		//二分法排序--是简单插入排序的优化
+		int[] intBinaryArray = generateArray();
+		binarySort(intBinaryArray);
+		System.out.println();
+
+		//希尔排序
+		int[] intShellArray = generateArray();
+		shellSort(intShellArray);
 		System.out.println();
 
 		//快速排序一(是对冒泡排序的优化)：
-		int[] intArray = {87, 45, 78, 32, 17, 65, 53, 9, 122, 133};
-		System.out.println("quick-sort-begin1:" + JSONObject.toJSONString(intArray));
-		System.out.println("quick-sort-end1:" + JSONObject.toJSONString(quickSort(intArray, 0, intArray.length - 1)));
+		int[] intArrayQuick = generateArray();
+		System.out.println("quickSort: " + JSONObject.toJSONString(intArrayQuick));
+		int[] arraySorted = quickSort(intArrayQuick, 0, intArrayQuick.length - 1);
+		System.out.println("quickSort: " + JSONObject.toJSONString(arraySorted));
 		System.out.println();
 
-		//快速排序二(是对冒泡排序的优化)：先治后分
-		int[] intArray1 = {87, 45, 78, 32, 17, 65, 53, 9, 122, 133};
-		System.out.println("quick-sort-begin2:" + JSONObject.toJSONString(intArray1));
-		System.out.println("quick-sort-end2:" + JSONObject.toJSONString(intArray1));
-		System.out.println();
+//		int[] intArrayQuick2 = generateArray();
+//		int[] arraySorted2 = quickSortTwo(intArrayQuick2, 0, intArrayQuick2.length - 1);
 
 		//堆排序
-		heapSort();
+		int[] intArrayHeap = generateArray();
+		heapSort(intArrayHeap);
 		System.out.println();
 
 		//归并排序：先分后治
-		int[] intArrayForMergeSort = {87, 45, 78, 32, 17, 65, 53, 9, 122, 133};
-		System.out.println("merge-sort-begin:" + JSONObject.toJSONString(intArrayForMergeSort));
-		mergeSort(intArrayForMergeSort, 0, intArrayForMergeSort.length);
-		System.out.println("merge-sort-end:" + JSONObject.toJSONString(intArrayForMergeSort));
+		int[] intArrayMergeSort = {87, 45, 78, 32, 17, 65, 53, 9, 122, 133};
+		mergeSort(intArrayMergeSort);
 		System.out.println();
-
-
-		//二分法排序--是简单插入排序的优化
-		int[] defaultArray = {87, 45, 78, 32, 17, 65, 53, 9, 122, 133};
-		binarySort(defaultArray);
-
 	}
 
+	/**
+	 * 从第二个元素开始，和之前的已排好序的字数组的元素比较，找到合适的位置，
+	 * 然后后面的元素向后移动一位，再将该元素插入到前面合适的位置。时间复杂度为（O（n^2））
+	 *
+	 * @param intArray
+	 */
+	private static void insertSort(int[] intArray) {
+		System.out.println("insertSort: " + JSONObject.toJSONString(intArray));
+		for (int i = 1; i < intArray.length; i++) {
+			int key = intArray[i];
+			int j = i - 1;
+			while (j >= 0 && intArray[j] > key) {
+				intArray[j + 1] = intArray[j];
+				j--;
+			}
+			intArray[j + 1] = key;
+		}
+		System.out.println("insertSort: " + JSONObject.toJSONString(intArray));
+	}
+
+	/**
+	 * 选择排序
+	 * 比如:从小到大,类似冒泡,每次找出最小的数,然后将最小的数放置最前边
+	 * <p>
+	 * 思路：类似于冒泡，每次将后面最小的元素放在前面。时间复杂度为（（O（n^2）））
+	 *
+	 * @param intArraySelect
+	 */
+	private static void selectSort(int[] intArraySelect) {
+		System.out.println("selectSort: " + JSONObject.toJSONString(intArraySelect));
+		int temp = 0;
+		//保存最小的元素的下标
+		int min = 0;
+		for (int i = 0; i < intArraySelect.length; i++) {
+			min = i;
+			for (int j = i + 1; j < intArraySelect.length; j++) {
+				if (intArraySelect[j] < intArraySelect[min]) {
+					min = j;
+				}
+			}
+			//当最小值不是int[i]的时候,才需要调换位置
+			if (min != i) {
+				temp = intArraySelect[min];
+				intArraySelect[min] = intArraySelect[i];
+				intArraySelect[i] = temp;
+			}
+		}
+		System.out.println("selectSort: " + JSONObject.toJSONString(intArraySelect));
+	}
+
+	/**
+	 * 希尔排序
+	 * 思路：类似于插入排序，只是每次所取的步长为（数组的长度 /  2 / i）。时间复杂度为（n*log n）。
+	 *
+	 * @param intArray
+	 */
+	/**
+	 * 希尔排序进行分组的时候,多少元素为一组,本例子:将该十个元素分为5组,每组2个元素
+	 */
+	static int defaultShell = 2;
+
+	private static void shellSort(int[] intArray) {
+		System.out.println("shellSort: " + JSONObject.toJSONString(intArray));
+		for (int gap = intArray.length / defaultShell; gap > 0; gap = gap / defaultShell) {
+			for (int i = gap; i < intArray.length; i++) {
+				int key = intArray[i];
+				int j = i - gap;
+				while (j >= 0 && intArray[j] > key) {
+					intArray[j + gap] = intArray[j];
+					j = j - gap;
+				}
+				intArray[j + gap] = key;
+			}
+		}
+		System.out.println("shellSort: " + JSONObject.toJSONString(intArray));
+	}
 
 	/**
 	 * 二分法排序
+	 * 思路:插入排序的多此一举，居然先用二分法查找插入位置（多此一举），
+	 * 然后再所有插入位置（二分法查出来的）后面的元素全部后移
 	 *
 	 * @param values
 	 */
 	private static void binarySort(int[] values) {
-		System.out.println(JSONObject.toJSONString(values));
+		System.out.println("binarySort: " + JSONObject.toJSONString(values));
 		for (int i = 0; i < values.length; i++) {
 			int currentValues = values[i];
 			int low = 0;
@@ -74,31 +158,31 @@ public class SortWay {
 				values[j + 1] = values[j];
 			}
 			values[high + 1] = currentValues;
-			System.out.println(i + " : " + JSONObject.toJSONString(values));
 		}
-		System.out.println(JSONObject.toJSONString(values));
+		System.out.println("binarySort: " + JSONObject.toJSONString(values));
 	}
 
 
 	/**
 	 * 归并排序：分治思想，先分后治
+	 * 思路：用分治的思想，将数组分至最小，再合并即可.时间复杂度为（n * log n ）是一个稳定的排序算法.
 	 *
 	 * @param intArray
-	 * @param start
-	 * @param end
 	 */
-	private static void mergeSort(int[] intArray, int start, int end) {
+	private static void mergeSort(int[] intArray) {
+		System.out.println("mergeSort: " + JSONObject.toJSONString(intArray));
 		int[] temp = new int[intArray.length];
-		sort(intArray, 0, intArray.length - 1, temp);
+		mergeSortRecursion(intArray, 0, intArray.length - 1, temp);
+		System.out.println("mergeSort: " + JSONObject.toJSONString(intArray));
 	}
 
-	private static void sort(int[] arr, int left, int right, int[] temp) {
+	private static void mergeSortRecursion(int[] arr, int left, int right, int[] temp) {
 		if (left < right) {
 			int mid = (left + right) / 2;
 			//左边归并排序，使得左子序列有序
-			sort(arr, left, mid, temp);
+			mergeSortRecursion(arr, left, mid, temp);
 			//右边归并排序，使得右子序列有序
-			sort(arr, mid + 1, right, temp);
+			mergeSortRecursion(arr, mid + 1, right, temp);
 			//将两个有序子数组合并操作
 			merge(arr, left, mid, right, temp);
 		}
@@ -108,15 +192,11 @@ public class SortWay {
 		int i = left;
 		int j = mid + 1;
 		int t = 0;
+		//mid左右两边的数组都是已经排序过了的,将其比较并按照从小到大加入到temp中
+		//注意:下面的加入方法会出现mid左右的数组没有全部加入,此时需要通过后面的方法再添加一次
 		while (i <= mid && j <= right) {
 			if (arr[i] <= arr[j]) {
 				temp[t++] = arr[i++];
-				/*
-				上面等于：
-				temp[t] = arr[i];
-				t++;
-				i++;
-				 */
 			} else {
 				temp[t++] = arr[j++];
 			}
@@ -142,10 +222,11 @@ public class SortWay {
 	 * 对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。在这一点，最后的元素应该会是最小的数。
 	 * 针对所有的元素重复以上的步骤，除了最后一个。
 	 * 持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。
+	 * <p>
+	 * 思路：就是每次将最大或最小的元素放到数组的最后，so easy！时间复杂度为（O（n^2））
 	 */
-	private static void bubbleSort() {
-		int[] intArray = {87, 45, 78, 32, 17, 65, 53, 9, 122, 133};
-		System.out.println("bubble-sort-begin:" + JSONObject.toJSONString(intArray));
+	private static void bubbleSort(int[] intArray) {
+		System.out.println("bubbleSort:" + JSONObject.toJSONString(intArray));
 		for (int i = 0; i < intArray.length; i++) {
 			for (int j = i; j < intArray.length; j++) {
 				//倒叙
@@ -156,33 +237,7 @@ public class SortWay {
 				}
 			}
 		}
-		System.out.println("bubble-sort-end:" + JSONObject.toJSONString(intArray));
-	}
-
-	/**
-	 * 直接排序(正序),时间复杂度为O(n⑵)
-	 *
-	 * @return
-	 */
-	private static void directSequence() {
-		int[] intArray = {87, 45, 78, 32, 17, 65, 53, 9, 122, 133};
-		System.out.println("direct-sort-begin:" + JSONObject.toJSONString(intArray));
-		for (int i = 1; i < intArray.length; i++) {
-			if (intArray[i] < intArray[i - 1]) {
-				//记录空缺的位置，初始为节点位置
-				int position = i;
-				int temp = intArray[i];
-				for (int j = i - 1; j >= 0 && temp < intArray[j]; j--) {
-					intArray[j + 1] = intArray[j];
-					//记录每一次迭代的空缺位置，一边后续填值
-					position = j;
-				}
-				//将最后的值填写到空缺的的位置
-				intArray[position] = temp;
-				System.out.println(JSONObject.toJSONString(intArray));
-			}
-		}
-		System.out.println("direct-sort-end:" + JSONObject.toJSONString(intArray));
+		System.out.println("bubbleSort:" + JSONObject.toJSONString(intArray));
 	}
 
 	/**
@@ -246,46 +301,46 @@ public class SortWay {
 	 * @param high
 	 * @return
 	 */
-	private static int[] quickSortTwo(int[] intArray, int low, int high) {
-		if (low >= high) {
-			return intArray;
-		}
-		int i = low;
-		int j = high;
-		int index = intArray[i];
-		while (i < j) {
-			while (i < j && intArray[j] >= index) {
-				j--;
-			}
-			if (i < j) {
-				intArray[i] = intArray[j];
-				i++;
-			}
-			while (i < j && intArray[i] < index) {
-				i++;
-			}
-			// 用比基准大的记录替换高位记录
-			if (i < j) {
-				intArray[j] = intArray[i];
-			}
-		}
-		// 将基准数值替换回 a[i]
-		intArray[i] = index;
-		// 对低子表进行递归排序
-		quickSortTwo(intArray, low, i - 1);
-		// 对高子表进行递归排序
-		quickSortTwo(intArray, i + 1, high);
-		return intArray;
-	}
+//	private static int[] quickSortTwo(int[] intArray, int low, int high) {
+//		if (low >= high) {
+//			return intArray;
+//		}
+//		int i = low;
+//		int j = high;
+//		int index = intArray[i];
+//		while (i < j) {
+//			while (i < j && intArray[j] >= index) {
+//				j--;
+//			}
+//			if (i < j) {
+//				intArray[i] = intArray[j];
+//				i++;
+//			}
+//			while (i < j && intArray[i] < index) {
+//				i++;
+//			}
+//			// 用比基准大的记录替换高位记录
+//			if (i < j) {
+//				intArray[j] = intArray[i];
+//			}
+//		}
+//		// 将基准数值替换回 a[i]
+//		intArray[i] = index;
+//		// 对低子表进行递归排序
+//		quickSortTwo(intArray, low, i - 1);
+//		// 对高子表进行递归排序
+//		quickSortTwo(intArray, i + 1, high);
+//		return intArray;
+//	}
 
 	/**
 	 * 堆排序:先将数组变为大根(顶)堆,然后去根元素（每次取完都要重新整理成大根堆）
 	 */
-	private static void heapSort() {
-		int[] intArray = {87, 45, 78, 32, 17, 65, 53, 9, 122, 133};
-		System.out.println("heap-sort-begin:" + JSONObject.toJSONString(intArray));
+	private static void heapSort(int[] intArray) {
+		System.out.println("heapSort:" + JSONObject.toJSONString(intArray));
 		//堆排序,初始建堆，array[0]为第一趟值最大的元素
 		buildMaxHeap(intArray);
+		System.out.println("heapSort:" + JSONObject.toJSONString(intArray));
 		for (int i = intArray.length - 1; i >= 1; i--) {
 			//将堆顶元素和堆底元素交换，即得到当前最大元素正确的排序位置
 			int temp = intArray[0];
@@ -293,8 +348,9 @@ public class SortWay {
 			intArray[i] = temp;
 			//整理，将剩余的元素整理成堆
 			adjustDownToUp(intArray, 0, i);
+			System.out.println(JSONObject.toJSONString(intArray));
 		}
-		System.out.println("heap-sort-end:" + JSONObject.toJSONString(intArray));
+		System.out.println("heapSort:" + JSONObject.toJSONString(intArray));
 	}
 
 	/**
@@ -323,7 +379,7 @@ public class SortWay {
 	 */
 	private static void adjustDownToUp(int[] array, int k, int length) {
 		int temp = array[k];
-		//i为初始化为节点k的左孩子，沿节点较大的子节点向下调整
+		//i初始化为节点k的左孩子，沿节点较大的子节点向下调整
 		for (int i = 2 * k + 1; i <= length - 1; i = 2 * i + 1) {
 			//取节点较大的子节点的下标；i + 1 < length防止该根节点只有一个子节点出现数组越界
 			if (i + 1 < length && array[i] < array[i + 1]) {
@@ -337,11 +393,11 @@ public class SortWay {
 			} else {
 				//将左右子结点中较大值array[i]调整到双亲节点上
 				array[k] = array[i];
-				//【关键】修改k值，以便继续向下调整
+				//关键:修改k值，以便继续向下调整
 				k = i;
 			}
 		}
-		//被调整的结点的值放人最终位置
+		//被调整的结点的值放入最终位置
 		array[k] = temp;
 	}
 
@@ -391,5 +447,14 @@ public class SortWay {
 		return array;
 	}
 
+	/**
+	 * 初始化一个乱序数组
+	 *
+	 * @return
+	 */
+	private static int[] generateArray() {
+		int[] intArray = {87, 45, 78, 32, 17, 65, 53, 9, 122, 133};
+		return intArray;
+	}
 
 }

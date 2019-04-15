@@ -98,7 +98,7 @@ public class Dichotomy {
 	}
 	
 	/**
-	 * 使用二分法查找值的位置
+	 * 使用二分法查找值的位置,查找之前必须要是有序数组
 	 * @param intArr
 	 * @param key
 	 * @return

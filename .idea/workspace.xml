@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bdb1f1c-ed56-4f8b-ae2e-abbe3ef7bedc" name="Default" comment="-">
-      <change afterPath="$PROJECT_DIR$/src/main/java/B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thread/ReentrantLockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thread/ReentrantReadWriteLockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thread/StampedLockTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designMode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/designMode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/arithmetic/Dichotomy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/arithmetic/Dichotomy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/arithmetic/SortWay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/arithmetic/SortWay.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,97 +24,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/locks/StampedLock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="1064" column="22" selection-start-line="1064" selection-start-column="17" selection-end-line="1064" selection-end-column="22" />
-              <folding>
-                <element signature="e#14032#14033#0" expanded="true" />
-                <element signature="e#14062#14063#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/locks/ReentrantReadWriteLock.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/SortWay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="942" column="21" selection-start-line="942" selection-start-column="21" selection-end-line="942" selection-end-column="21" />
+            <state relative-caret-position="420">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Arrays.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="143" column="29" selection-start-line="143" selection-start-column="29" selection-end-line="143" selection-end-column="29" />
               <folding>
-                <element signature="e#7757#7758#0" expanded="true" />
-                <element signature="e#7784#7785#0" expanded="true" />
-                <element signature="e#23950#23951#0" expanded="true" />
-                <element signature="e#24012#24013#0" expanded="true" />
-                <element signature="e#26818#26819#0" expanded="true" />
-                <element signature="e#26858#26859#0" expanded="true" />
-                <element signature="e#27298#27299#0" expanded="true" />
-                <element signature="e#27343#27344#0" expanded="true" />
-                <element signature="e#30177#30178#0" expanded="true" />
-                <element signature="e#30226#30227#0" expanded="true" />
-                <element signature="e#34878#34879#0" expanded="true" />
-                <element signature="e#34918#34919#0" expanded="true" />
-                <element signature="e#35675#35676#0" expanded="true" />
-                <element signature="e#35714#35715#0" expanded="true" />
-                <element signature="e#47523#47524#0" expanded="true" />
-                <element signature="e#47570#47571#0" expanded="true" />
-                <element signature="e#48226#48227#0" expanded="true" />
-                <element signature="e#48264#48265#0" expanded="true" />
-                <element signature="e#48529#48530#0" expanded="true" />
-                <element signature="e#48575#48576#0" expanded="true" />
-                <element signature="e#48905#48906#0" expanded="true" />
-                <element signature="e#48948#48949#0" expanded="true" />
-                <element signature="e#49202#49203#0" expanded="true" />
-                <element signature="e#49249#49250#0" expanded="true" />
+                <element signature="e#5027#5028#0" expanded="true" />
+                <element signature="e#5098#5099#0" expanded="true" />
+                <element signature="e#223144#223145#0" expanded="true" />
+                <element signature="e#223197#223198#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/DualPivotQuicksort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="298" column="14" selection-start-line="298" selection-start-column="14" selection-end-line="298" selection-end-column="14" />
-              <folding>
-                <element signature="e#20991#20992#0" expanded="true" />
-                <element signature="e#21042#21043#0" expanded="true" />
-                <element signature="e#22675#22676#0" expanded="true" />
-                <element signature="e#22703#22704#0" expanded="true" />
-                <element signature="e#22933#22934#0" expanded="true" />
-                <element signature="e#22965#22966#0" expanded="true" />
-                <element signature="e#41392#41393#0" expanded="true" />
-                <element signature="e#41449#41450#0" expanded="true" />
-                <element signature="e#44444#44445#0" expanded="true" />
-                <element signature="e#44501#44502#0" expanded="true" />
-                <element signature="e#46422#46423#0" expanded="true" />
-                <element signature="e#46479#46480#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/locks/AbstractOwnableSynchronizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-              <folding>
-                <element signature="e#1663#1664#0" expanded="true" />
-                <element signature="e#1708#1709#0" expanded="true" />
-                <element signature="e#2022#2023#0" expanded="true" />
-                <element signature="e#2065#2066#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="307" column="32" selection-start-line="307" selection-start-column="32" selection-end-line="307" selection-end-column="32" />
+            <state relative-caret-position="390">
+              <caret line="121" column="22" selection-start-line="121" selection-end-line="122" />
             </state>
           </provider>
         </entry>
@@ -131,7 +68,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>set(</find>
       <find>inheritableThreadLocals</find>
       <find>threadLocals</find>
       <find>synchronized</find>
@@ -161,6 +97,7 @@
       <find>PhantomReference</find>
       <find>issha</find>
       <find>clh</find>
+      <find>quickSort</find>
     </findStrings>
     <replaceStrings>
       <replace>intArray</replace>
@@ -177,7 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cdn/CDNTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/tree/CommonTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/tree/CommonBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/tree/binary/common/Node.java" />
@@ -212,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/main/java/programming_pearls_demo/readme" />
         <option value="$PROJECT_DIR$/src/main/java/programming_pearls_demo/FirstChapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/collection/LinkedListTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/arithmetic/SortWay.java" />
         <option value="$PROJECT_DIR$/src/main/java/programmingpearls/FirstChapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/collection/ArrayListTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/programmingpearls/SecondChapter.java" />
@@ -228,6 +163,8 @@
         <option value="$PROJECT_DIR$/src/main/java/thread/StampedLockTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/B.java" />
+        <option value="$PROJECT_DIR$/src/main/java/arithmetic/Dichotomy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/arithmetic/SortWay.java" />
       </list>
     </option>
   </component>
@@ -276,8 +213,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,6 +242,22 @@
             </path>
             <path>
               <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="design_pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="arithmetic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="design_pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="collection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -324,31 +277,6 @@
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="src.zip" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="src.zip" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="src.zip" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="nio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="src.zip" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="nio" type="462c0819:PsiDirectoryNode" />
-              <item name="channels" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
@@ -387,14 +315,14 @@
     <property name="SearchEverywhereHistoryKey" value="stack&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Stack.java&#10;treeset&#9;PSI&#9;JAVA://java.util.TreeSet&#10;tree&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/TreeMap.java&#10;vector&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Vector.java&#10;array&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/ArrayList.java&#10;linked&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/LinkedList.java&#10;hashmap&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/HashMap.java&#10;hashtable&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Hashtable.java&#10;abstract&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/AbstractMap.java&#10;linkedlist&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/LinkedList.java&#10;linkedlis&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/LinkedList.java&#10;dictionary&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Dictionary.java&#10;sortedmap&#9;PSI&#9;JAVA://java.util.SortedMap&#10;sortmap&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/SortedMap.java&#10;entity&#9;PSI&#9;JAVA://org.w3c.dom.Entity&#10;sortma&#9;PSI&#9;JAVA://java.util.SortedMap&#10;arraylist&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/ArrayList.java&#10;abstractmap&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/AbstractMap.java&#10;map&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Map.java&#10;list&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/List.java&#10;System&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/System.java&#10;listIterator&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/ListIterator.java&#10;abstractlist&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/AbstractList.java&#10;abstractlis&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/AbstractList.java&#10;copyon&#9;PSI&#9;JAVA://java.util.concurrent.CopyOnWriteArrayList&#10;randomacc&#9;PSI&#9;JAVA://java.util.RandomAccess&#10;listiterator&#9;PSI&#9;JAVA://java.util.ListIterator&#10;iterator&#9;PSI&#9;JAVA://java.util.Iterator&#10;set&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Set.java&#10;collection&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Collection.java&#10;abstracmap&#9;PSI&#9;JAVA://java.util.AbstractMap&#10;Enumeration&#9;PSI&#9;JAVA://java.util.Enumeration&#10;reflect&#9;PSI&#9;JAVA://sun.nio.ch.Reflect&#10;proxy&#9;FILE&#9;file://C:/temporary-file/project/designMode/src/main/java/designMode/proxy&#10;bean&#9;PSI&#9;JAVA://com.sun.xml.internal.bind.v2.runtime.reflect.opt.Bean&#10;fileinputstr&#9;PSI&#9;JAVA://java.io.FileInputStream&#10;inputstrea&#9;PSI&#9;JAVA://java.io.InputStream" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552898705636" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555322247550" />
     <property name="last_opened_file_path" value="F:/xgfk/fkCloud/rule_center" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -416,7 +344,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StringBuilderTest">
+  <component name="RunManager" selected="Application.SortWay">
     <configuration name="Eleven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="thinking_in_java.Eleven" />
       <module name="designMode" />
@@ -445,13 +373,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecondChapter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programmingpearls.SecondChapter" />
+    <configuration name="SortWay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="arithmetic.SortWay" />
       <module name="designMode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="programmingpearls.*" />
+          <option name="PATTERN" value="arithmetic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -509,18 +437,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.StringTest" />
-      <item itemvalue="Application.SecondChapter" />
       <item itemvalue="Application.EnumsTest" />
       <item itemvalue="Application.Eleven" />
       <item itemvalue="Application.StringBuilderTest" />
+      <item itemvalue="Application.SortWay" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SortWay" />
         <item itemvalue="Application.StringBuilderTest" />
         <item itemvalue="Application.StringTest" />
         <item itemvalue="Application.Eleven" />
         <item itemvalue="Application.EnumsTest" />
-        <item itemvalue="Application.SecondChapter" />
       </list>
     </recent_temporary>
   </component>
@@ -634,7 +562,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446326000" />
+    <option name="totallyTimeSpent" value="466483000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -649,17 +577,17 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4976378" weight="0.19947916" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.5023622" side_tool="true" visible="true" weight="0.19947916" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.53913045" weight="0.18229167" />
+      <window_info id="Structure" order="1" sideWeight="0.46086955" side_tool="true" weight="0.18229167" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3273305" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33050847" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33474576" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3273305" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33050847" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4417373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
@@ -667,12 +595,12 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49635416" weight="0.31991526" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50364584" side_tool="true" weight="0.31991526" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3275488" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3273305" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.22916667" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.22916667" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -682,6 +610,40 @@
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3296875" />
       <window_info anchor="right" id="Maven" order="10" weight="0.32995737" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.53913045" weight="0.18229167" />
+      <window_info id="Structure" order="1" sideWeight="0.46086955" side_tool="true" weight="0.18229167" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3273305" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33050847" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4417373" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32838982" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49635416" weight="0.31991526" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50364584" side_tool="true" weight="0.31991526" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3273305" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.22916667" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3296875" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.32995737" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -779,15 +741,34 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/AbstractStringBuilder.java</url>
-          <line>122</line>
-          <properties />
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/AbstractStringBuilder.java</url>
           <line>209</line>
           <properties />
           <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/arithmetic/SortWay.java</url>
+          <line>175</line>
+          <properties />
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="right == 4" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/arithmetic/SortWay.java</url>
+          <line>193</line>
+          <properties />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/arithmetic/SortWay.java</url>
+          <line>204</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/arithmetic/SortWay.java</url>
+          <line>380</line>
+          <properties />
+          <option name="timeStamp" value="112" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -807,49 +788,21 @@
       </configuration>
     </watches-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>right == 4</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>right=4</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/CopyOnWriteArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="87" column="13" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/ref/ReferenceQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/ref/WeakReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/ref/PhantomReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="78" column="43" lean-forward="true" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/ref/SoftReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="63" column="41" lean-forward="true" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/ref/FinalReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -896,28 +849,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2158">
-          <caret line="136" column="13" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
-          <folding>
-            <element signature="e#223144#223145#0" expanded="true" />
-            <element signature="e#223197#223198#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/function/BiFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/function/BinaryOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1258,6 +1193,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="403" column="7" selection-start-line="403" selection-start-column="7" selection-end-line="403" selection-end-column="7" />
+          <folding>
+            <element signature="e#19103#19104#0" expanded="true" />
+            <element signature="e#19161#19162#0" expanded="true" />
+            <element signature="e#19327#19328#0" expanded="true" />
+            <element signature="e#19410#19411#0" expanded="true" />
+            <element signature="e#24329#24330#0" expanded="true" />
+            <element signature="e#24394#24395#0" expanded="true" />
+            <element signature="e#31057#31058#0" expanded="true" />
+            <element signature="e#31095#31096#0" expanded="true" />
+            <element signature="e#66765#66766#0" expanded="true" />
+            <element signature="e#66822#66823#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/function/BinaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/Dichotomy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="100" column="31" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/collection/ArrayListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/DualPivotQuicksort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="121" column="22" selection-start-line="121" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="143" column="29" selection-start-line="143" selection-start-column="29" selection-end-line="143" selection-end-column="29" />
+          <folding>
+            <element signature="e#5027#5028#0" expanded="true" />
+            <element signature="e#5098#5099#0" expanded="true" />
+            <element signature="e#223144#223145#0" expanded="true" />
+            <element signature="e#223197#223198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/SortWay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -1335,7 +1344,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.alibaba:fastJson:1.2.17</last-edited>
+          <last-edited>Maven: commons-lang:commons-lang:2.7-SNAPSHOT</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
