@@ -2,11 +2,9 @@ package leetcode;
 
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.collections.CollectionUtils;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @description: 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
@@ -18,47 +16,61 @@ import java.util.Map;
  * @Date: 2019/4/22 18:02
  */
 public class Three {
-	public static void main(String[] args){
-		String randomStr = "111111";
+	public static void main(String[] args) {
+		//String randomStr = "pwwkew";
+		String randomStr = "1234dvdfdv";
 		int maxLength = getMaxStr(randomStr);
 		System.out.println(maxLength);
 	}
 
 
-	public static int getMaxStr(String str){
-		int maxLength = statisticsIndexOfStr(str, new HashMap<>(15));
+	public static int getMaxStr(String str) {
+		int maxLength = statisticsIndexOfStr2(str);
 		return maxLength;
 
+	}
+
+	public static int statisticsIndexOfStr2(String str) {
+		//maxLength:最大长度  wipeLength: 出现的最后的位置(下标 + 1),同时也是要舍弃的最大的段
+		long startTime = System.currentTimeMillis();
+		int maxLength = 0, wipeLength = 0;
+		Map<Character, Integer> map = new HashMap<>(15);
+		char[] chars = str.toCharArray();
+		for (int j = 0; j < chars.length; j++) {
+			if (map.containsKey(chars[j])) {
+				wipeLength = Math.max(map.get(chars[j]), wipeLength);
+			}
+			maxLength = Math.max(maxLength, j - wipeLength + 1);
+			//将遍历过的字符放置map中,并设置其出现的位置(下标+1)
+			map.put(chars[j], j + 1);
+		}
+		System.out.println(System.currentTimeMillis() - startTime);
+		System.out.println(JSONObject.toJSONString(map));
+		return maxLength;
 	}
 
 	/**
 	 * 查找每个元素的出现的位置
 	 */
-	public static int statisticsIndexOfStr(String str, Map<String, List> charMap){
-		if(str == null || str.length() == 0){
-			return 0;
+	public static void statisticsIndexOfStr(String str, Map<String, List<Integer>> charMap) {
+		if (str == null) {
+			return;
+		} else if (str.length() <= 1) {
+			return;
 		}
 		char[] strChars = str.toCharArray();
-		int maxLength = -1;
+		int maxLength = 0;
 		for (int i = 0; i < strChars.length; i++) {
 			List<Integer> occurrenceList = charMap.get(strChars[i] + "");
-			if(CollectionUtils.isEmpty(occurrenceList)){
+			if (CollectionUtils.isEmpty(occurrenceList)) {
 				occurrenceList = new ArrayList();
 			}
 			occurrenceList.add(i);
 			charMap.put(strChars[i] + "", occurrenceList);
-			if(occurrenceList.size() > 1){
-				int length = occurrenceList.get(occurrenceList.size() - 1);
-				//需要找出现两次以上,并且出现次数的index最小的
-				if(maxLength == -1){
-					maxLength = length;
-				}else{
-					maxLength = maxLength < length ? maxLength : length;
-				}
-			}
 		}
 		System.out.println(JSONObject.toJSONString(charMap));
-		return maxLength;
+		Set<Map.Entry<String, List<Integer>>> entrySet = charMap.entrySet();
+		return;
 	}
 
 }
