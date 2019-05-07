@@ -1,12 +1,5 @@
 package leetcode;
 
-import binarytree.Node;
-import com.alibaba.fastjson.JSONObject;
-import com.sun.corba.se.impl.presentation.rmi.IDLTypeException;
-
-import java.io.File;
-import java.util.List;
-
 /**
  * @desc: 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。
  * <p>
@@ -26,14 +19,14 @@ public class NineTeen {
 
 	public static void main(String[] args) {
 		int[] linkedArray = new int[]{1, 2, 3, 4, 5};
-		ListNode nodeHead = initListNode(linkedArray, 0);
+		ListNode nodeHead = ListNode.initListNode(linkedArray, 0);
 		System.out.println(nodeHead.toString());
 		System.out.println(removeNthFromEnd1(nodeHead, 3).toString());
 	}
 
 	/**
 	 * 优化:只需要一次循环
-	 * first和second指针,使得两指针之间相差位n,之后将first和second往后移,知道first==null,那么second.next就是要删除的
+	 * first和second指针,使得两指针之间相差位n,之后将first和second往后移,直到first==null,那么second.next就是要删除的
 	 *
 	 * @param head
 	 * @param n
@@ -83,28 +76,6 @@ public class NineTeen {
 		return dummy.getNext();
 	}
 
-	public static ListNode initListNode(int[] intArray, int index) {
-		ListNode node;
-		if (index == intArray.length - 1) {
-			node = new ListNode(intArray[index]);
-		} else {
-			node = new ListNode(intArray[index]);
-			node.setNext(initListNode(intArray, index + 1));
-		}
-		return node;
-	}
-
-
 }
-
-
-//class ListNode {
-//	int val;
-//	ListNode next;
-//
-//	ListNode(int x) {
-//		val = x;
-//	}
-//}
 
 
