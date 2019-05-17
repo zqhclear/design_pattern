@@ -42,8 +42,8 @@ public class FastFailTest {
 	/**
 	 * 初始化线程池
 	 */
-	private static ExecutorService executorService = new ThreadPoolExecutor(10, 15,
-			10, TimeUnit.SECONDS, new LinkedBlockingDeque<>(), namedThreadFactory);
+	private static ExecutorService executorService = new ThreadPoolExecutor(10,15,
+			10,TimeUnit.SECONDS, new LinkedBlockingDeque<>(), namedThreadFactory);
 
 	public static void main(String[] args) {
 		//同时启动两个线程操作list
@@ -59,7 +59,7 @@ public class FastFailTest {
 		Iterator iterator = list.iterator();
 		while (iterator.hasNext()) {
 			value = (Integer) iterator.next();
-			System.out.print(value + ", ");
+			System.out.print(value + "',' ");
 		}
 	}
 
@@ -90,4 +90,5 @@ public class FastFailTest {
 			}
 		}
 	}
+	
 }

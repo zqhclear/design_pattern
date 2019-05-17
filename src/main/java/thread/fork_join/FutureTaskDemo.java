@@ -8,7 +8,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.RecursiveTask;
 
 /**
- * @Description: fork/join框架处理并发任务(线程池)
+ * @Description: fork/join框架处理并发任务( )
  * @Author: zhongqionghua
  * @CreateDate: 2018/10/29 15:13
  */

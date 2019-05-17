@@ -87,7 +87,20 @@ public class Test {
 //		System.out.println(decryptFromBase64("BGxKtjbfzgi+lr5EB+LU6Q==", "testC1b6x@6aH$2dlw"));
 //		System.out.println(decryptFromBase64("cJiZKo2M0HcKZdjgGmv/vQ==", "testC1b6x@6aH$2dlw"));
 
-		countParams();
+//		countParams();
+
+
+		forEachBreakTest();
+	}
+
+
+	private static void forEachBreakTest(){
+		for (int i = 0; i <10 ; i++) {
+			outer:for (int j = 0; j <10 ; j++) {
+				System.out.println("this is test");
+				break;
+			}
+		}
 	}
 
 	private static int countParams(String... params) {
