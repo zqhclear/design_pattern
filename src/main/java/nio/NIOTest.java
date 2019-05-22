@@ -77,7 +77,7 @@ public class NIOTest {
 					System.out.print((char) byteBuffer.get());
 				}
 
-				// clear直接清空内存中所有的已读入的内容
+				// clear直接清空缓冲区,,compact只会清空已读的区域
 				byteBuffer.compact();
 				chanelRead = fileChannel.read(byteBuffer);
 			}

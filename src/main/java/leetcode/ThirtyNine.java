@@ -30,33 +30,25 @@ import java.util.List;
  * @author: zhongqionghua
  * @create: 2019/5/17 17:40
  */
-public class ThrityNine {
+public class ThirtyNine {
 	public static void main(String[] args) {
-		int[] intArrays = new int[]{1, 4, 6, 7, 9, 2, 3, 45};
-		System.out.println(JSONObject.toJSONString(combinationSum(intArrays, 9)));
+		int[] candidates = new int[]{2,3,6,7};
+		System.out.println(JSONObject.toJSONString(combinationSum(candidates, 7)));
 	}
 
 	public static List<List<Integer>> combinationSum(int[] candidates, int target) {
 		List<List<Integer>> res = new ArrayList<>();
 		Arrays.sort(candidates);
-		backtrack(candidates, target, res, 0, new ArrayList<Integer>());
+		backtrack(candidates, target, res, 0, new ArrayList<>());
 		return res;
 	}
 
-	/**
-	 * 回溯的方法，循环的找
-	 *
-	 * @param candidates
-	 * @param target
-	 * @param res
-	 * @param i
-	 * @param tmp_list
-	 */
 	private static void backtrack(int[] candidates, int target, List<List<Integer>> res, int i, ArrayList<Integer> tmp_list) {
 		if (target < 0) {
 			return;
 		}
 		if (target == 0) {
+			//此处需要重创建一个list对象,不创建的话,会使用相同的堆内存地址,后其更改
 			res.add(new ArrayList<>(tmp_list));
 			return;
 		}

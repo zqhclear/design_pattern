@@ -1,7 +1,5 @@
 package designMode.adapt.adapt_object;
 
-import designMode.adapt.adapt_class.Traget;
-
 /**
  * 适配器模式  （对象适配器,相比于类适配器，更加灵活）
  *  适用场景：
