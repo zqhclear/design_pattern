@@ -1,4 +1,4 @@
-package atomic;
+package thread.atomic;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.BinaryOperator;

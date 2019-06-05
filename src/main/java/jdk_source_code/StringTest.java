@@ -59,7 +59,8 @@ public class StringTest {
 		System.out.println(indexOf.substring(1, 3));
 
 		String replaceStr2 = "我是钟琼华我是钟琼华我是钟琼华";
-		System.out.println(replaceStr2.replaceFirst("钟", "万"));
+
+
 		System.out.println(replaceStr2.replaceAll("琼", "没事"));
 
 
@@ -67,5 +68,12 @@ public class StringTest {
 		System.out.println(JSONObject.toJSONString(splitStr.split("_")));
 		System.out.println(JSONObject.toJSONString(splitStr.split("_", 4)));
 
+
+		String internStr1 = new StringBuilder("计算机").append("软件").toString();
+		System.out.println(internStr1.intern() == internStr1);
+
+
+		String internStr2 = new StringBuilder("ja").append("va1").toString();
+		System.out.println(internStr2.intern() == internStr2);
 	}
 }
