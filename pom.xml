@@ -4,6 +4,25 @@
     <groupId>com.renrenaijia</groupId>
     <artifactId>designMode</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -40,12 +59,6 @@
             <version>1.3.9</version>
         </dependency>
 
-        <!-- netty包 -->
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-buffer</artifactId>
-            <version>4.0.27.Final</version>
-        </dependency>
 
         <!--convertUtils-->
         <dependency>
@@ -62,10 +75,11 @@
         </dependency>
 
         <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-            <version>2.7-20140716.134333-9</version>
+            <groupId>com.hynnet</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
         </dependency>
+
 
 
         <!-- 解析生成excel文件 -->
@@ -92,6 +106,13 @@
             <!--<artifactId>com.springsource.org.joda.time</artifactId>-->
             <!--<version>2.9.9</version>-->
         <!--</dependency>-->
+
+        <!-- netty框架 -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.6.Final</version>
+        </dependency>
 
 
     </dependencies>

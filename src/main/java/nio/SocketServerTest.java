@@ -11,7 +11,7 @@ import java.nio.channels.SocketChannel;
  * @author: zhongqionghua
  * @Date: 2018/12/24 14:21
  */
-public class ServerSocketChannelTest {
+public class SocketServerTest {
 
 	public static void main(String[] args) {
 		ServerSocketChannel serverSocketChannel = null;
@@ -30,7 +30,7 @@ public class ServerSocketChannelTest {
 			byteBuffer.flip();
 			socketChannel.write(byteBuffer);
 
-			String receiveMessage = SocketChannelTest.getMessageFormSocketChannel(socketChannel);
+			String receiveMessage = SocketClientTest.getMessageFormSocketChannel(socketChannel);
 			System.out.println("从客户端接收数据:" + receiveMessage);
 		} catch (IOException e) {
 			e.printStackTrace();
