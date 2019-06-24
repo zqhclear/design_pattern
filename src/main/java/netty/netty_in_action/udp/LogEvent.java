@@ -43,4 +43,5 @@ public final class LogEvent {
 	public long getReceived() {
 		return received;
 	}
+
 }
