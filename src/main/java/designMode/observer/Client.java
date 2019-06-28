@@ -15,7 +15,7 @@ import java.util.Map;
  * @author zhongqionghua
  * @date 2018年4月12日
  */
-public class Test {
+public class Client {
 	public static void main(String[] args){
 		Subject subject = new MySubjectImpl();
 		subject.addObserver(new ObserverOne());

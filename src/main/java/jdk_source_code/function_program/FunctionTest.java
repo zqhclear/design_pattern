@@ -1,5 +1,6 @@
 package jdk_source_code.function_program;
 
+import java.util.function.Consumer;
 import java.util.function.Function;
 
 /**
@@ -15,8 +16,16 @@ public class FunctionTest {
 		System.out.println(functionTest.apply("first"));
 		System.out.println(functionTest.andThen(functionTest2).apply("first"));
 		System.out.println(functionTest.compose(functionTest2).apply("first"));
+		functionTest4.accept("钟琼华");
 	}
 
-	public static Function<String, String> functionTest = item -> "test1--" + item;
+	public static Function<String, String> functionTest = item ->  {
+			System.out.println("asdfasfdaf");
+			return "test1--" + item;
+	};
 	public static Function<String, String> functionTest2 = item -> "test2--" + item;
+
+	public static Function<String, String> functionTest3 = item -> "asdfasdf";
+
+	public static Consumer<String> functionTest4 = System.out::println;
 }

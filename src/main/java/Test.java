@@ -1,4 +1,7 @@
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 import java.io.IOException;
@@ -8,6 +11,8 @@ import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Pattern;
 
 /**
@@ -92,7 +97,13 @@ public class Test {
 //		countParams();
 
 
-		forEachBreakTest();
+//		forEachBreakTest();
+
+
+		Map<Object, Object> map = new HashMap<Object, Object>(){{
+			put(new A("name1", "phone1"), new A("name2", "phone2"));
+		}};
+		System.out.println(JSONObject.toJSONString(map));
 	}
 
 
@@ -208,3 +219,30 @@ public class Test {
 		return result;
 	}
 }
+
+class A {
+	private String name;
+	private String phone;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public A(String name, String phone) {
+		this.name = name;
+		this.phone = phone;
+	}
+}
+

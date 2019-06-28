@@ -7,11 +7,11 @@ package designMode.observer;
  * @date 2018年4月12日
  */
 public interface Subject {
-	public void addObserver(Observer observer);
+	void addObserver(Observer observer);
 	
-	public void delObserver(Observer observer);
+	void delObserver(Observer observer);
 	
-	public void notifyObserver();
+	void notifyObserver();
 	
-	public void doByMySelf();
+	void doByMySelf();
 }
