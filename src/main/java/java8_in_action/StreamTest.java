@@ -333,7 +333,7 @@ public class StreamTest {
 				.sorted(comparing(Dish::getCalories))
 				//截断流,使元素不超过四个
 				.limit(4)
-				//获取菜的名字
+				//l
 				.map(Dish::getName)
 				//变为list(ArrayList)
 				.collect(toList());

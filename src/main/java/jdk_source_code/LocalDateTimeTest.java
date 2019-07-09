@@ -16,19 +16,19 @@ import static java.time.temporal.TemporalAdjusters.*;
 public class LocalDateTimeTest {
 	public static void main(String[] args) throws InterruptedException {
 //		test();
-		testLocalDate();
-		testLocalTime();
-		testLocalDateTime();
-
-		testInstant();
-
+//		testLocalDate();
+//		testLocalTime();
+//		testLocalDateTime();
+//
+//		testInstant();
+//
 		testDuration();
 
-		testTemporalAdjuster();
+//		testTemporalAdjuster();
 
-		testDateTimeFormatter();
-
-		testZoneId();
+//		testDateTimeFormatter();
+//
+//		testZoneId();
 	}
 
 	/**
@@ -104,6 +104,11 @@ public class LocalDateTimeTest {
 		System.out.println(Duration.between(instant2, instant1).toDays());
 
 		System.out.println(Duration.ofDays(3).getSeconds());
+
+
+		LocalDate localDate = LocalDate.now();
+		LocalDate localDate1 = LocalDate.now();
+		System.out.println(Duration.between(localDate, localDate1));
 
 	}
 

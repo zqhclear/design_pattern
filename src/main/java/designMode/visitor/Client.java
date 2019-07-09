@@ -29,6 +29,12 @@ public class Client {
 		
 		OtherPerson otherPerson = new OtherPerson();
 		home.action(otherPerson);
+
+		String s = "asdfasdf";
+		final String str = s;
+		System.out.println(str);
+		s = s.replace("asd", "123");
+		System.out.println(s);
 		
 	}
 }

@@ -63,6 +63,7 @@ public class One {
 		strList.sort(String::compareToIgnoreCase);
 
 		System.out.println(JSONObject.toJSONString(map.get("apple1".toLowerCase()).apply(0, "red")));
+
 	}
 
 
