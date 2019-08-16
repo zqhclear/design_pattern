@@ -28,6 +28,11 @@ public class StreamTest {
 					new Dish("排骨", 2000)));
 
 	public static void main(String[] args) {
+
+		String a = "";
+		String b = "2018-09-06 12:45:22";
+		String c = "2019-07-05 12:45:22";
+		System.out.println(a.compareToIgnoreCase(b));
 //		streamFirst();
 //
 //		onlyOnceConsumer();

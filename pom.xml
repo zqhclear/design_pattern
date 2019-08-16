@@ -147,5 +147,11 @@
             <version>2.3</version>
         </dependency>
 
+        <!--动态代理-区别于proxy-->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.1</version>
+        </dependency>
     </dependencies>
 </project>

@@ -20,8 +20,11 @@ public class NIOTest {
 	public static void main(String[] args) throws IOException {
 		//transferFrom();
 
-		InputStream inputStream = new FileInputStream(FILE_PATH);
-		((FileInputStream) inputStream).getChannel();
+//		InputStream inputStream = new FileInputStream(FILE_PATH);
+//		((FileInputStream) inputStream).getChannel();
+		while(true){
+			ByteBuffer byteBuffer = ByteBuffer.allocateDirect(1024 * 1024 * 1);
+		}
 
 	}
 
