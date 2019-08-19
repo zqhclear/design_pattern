@@ -19,11 +19,7 @@ package designmode.visitor;
  */
 public class Client {
 	public static void main(String[] args) {
-		Animal dog = new Dog();
-		Animal cat = new Cat();
-		Home home = new Home();
-		home.addAnimal(dog);
-		home.addAnimal(cat);
+		Home home = initHomeDefault();
 
 		Owner owner = new Owner();
 		home.action(owner);
@@ -37,5 +33,14 @@ public class Client {
 		s = s.replace("asd", "123");
 		System.out.println(s);
 
+	}
+
+	private static Home initHomeDefault() {
+		Animal dog = new Dog();
+		Animal cat = new Cat();
+		Home home = new Home();
+		home.addAnimal(dog);
+		home.addAnimal(cat);
+		return home;
 	}
 }

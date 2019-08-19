@@ -3,8 +3,9 @@ package designmode.visitor;
 /**
  * 具体元素角色：
  * eg:猫
- * @desc
+ *
  * @author zhongqionghua
+ * @desc
  * @date 2018年4月13日
  */
 public class Cat extends Animal {
