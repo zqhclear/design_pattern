@@ -73,6 +73,5 @@ public class SortedTreeClient {
 		System.out.println("删除操作状态：" + deleteFlag);
 		bt.inOrderTraverse(bt.getRoot(), intList);
 		System.out.println("删除之后, root:" + bt.getRoot() +"|中序:" + JSONObject.toJSON(intList));
-
 	}
 }

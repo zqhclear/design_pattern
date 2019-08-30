@@ -18,7 +18,7 @@ public class SocketClientTest {
 			//使用open方法获取一个socketChannel对象
 			socketChannel = SocketChannel.open();
 			//将socketChannel对象绑定端口号和ip
-			socketChannel.connect(new InetSocketAddress(8000));
+			socketChannel.connect(new InetSocketAddress(8680));
 			//创建缓存区 1m
 			ByteBuffer byteBuffer = ByteBuffer.allocateDirect(1024 * 1024);
 			String message = "hello,this is message from socket client";
